@@ -2,15 +2,16 @@ class Dog
   # Replace with Dog clas
   attr_accessor :name, :breed, :age
   
-  @@array=[]
+  @@dog_array=[]
   def initialize(name,breed,age)
     @name=name
     @breed=breed
     @age=age
-    @@array.push(Dog.new)
+    @@dog_array << self
   end
-  def all 
-    
+  def self.all 
+    @@dog_array
   end
   
 end
+
