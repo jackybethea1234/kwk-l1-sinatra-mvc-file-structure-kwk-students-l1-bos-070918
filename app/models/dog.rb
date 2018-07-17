@@ -7,7 +7,7 @@ class Model
     @name=name
     @breed=breed
     @age=age
-    @@array.push
+    @@array.push[Dog.new]
   end
   def all 
     
